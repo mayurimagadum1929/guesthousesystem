@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Add Guest</title>
+
+
+<style>
+
+body{
+    font-family: Arial;
+    background:#dff6ff;
+}
+
+.container{
+    width:400px;
+    margin:auto;
+    margin-top:40px;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+h2{
+    text-align:center;
+    color:#0066cc;
+}
+
+input{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#0066cc;
+    color:white;
+    border:none;
+    border-radius:5px;
+}
+
+button:hover{
+    background:#004c99;
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<h1>Add Guest</h1>
+
+<form th:action="@{/guest/save}" th:object="${guest}" method="post">
+
+Name:
+<input type="text" th:field="*{name}">
+<br><br>
+
+Mobile:
+<input type="text" th:field="*{mobile}">
+<br><br>
+
+City:
+<input type="text" th:field="*{city}">
+<br><br>
+
+Room Number:
+<input type="number" th:field="*{roomNumber}">
+<br><br>
+
+Check In:
+<input type="date" th:field="*{checkInDate}">
+<br><br>
+
+Check Out:
+<input type="date" th:field="*{checkOutDate}">
+<br><br>
+
+Amount:
+<input type="number" th:field="*{totalAmount}">
+<br><br>
+
+Payment Status:
+<input type="text" th:field="*{paymentStatus}">
+<br><br>
+
+<button type="submit">Save Guest</button>
+
+
+</form>
+</div>
+</body>
+
+</html>

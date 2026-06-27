@@ -1,0 +1,61 @@
+body{
+    background: linear-gradient(to right, #dbeafe, #f0f9ff);
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+h1{
+    text-align:center;
+    color:#1e3a8a;
+    font-size:40px;
+    font-weight:bold;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0px 0px 10px gray;
+}
+
+th{
+    background:#2563eb;
+    color:white;
+    padding:12px;
+    font-size:18px;
+}
+
+td{
+    padding:10px;
+    text-align:center;
+    font-weight:bold;
+}
+
+tr:nth-child(even){
+    background:#f1f5f9;
+}
+
+.add-btn{
+    background:#22c55e;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.edit-btn{
+    background:#f59e0b;
+    color:white;
+    padding:6px 12px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.delete-btn{
+    background:#ef4444;
+    color:white;
+    padding:6px 12px;
+    text-decoration:none;
+    border-radius:5px;
+}

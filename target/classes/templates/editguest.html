@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Edit Guest</title>
+
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+<h1>Edit Guest</h1>
+
+<form th:action="@{/guest/save}" th:object="${guest}" method="post">
+
+<input type="hidden" th:field="*{id}">
+
+Name:
+<input type="text" th:field="*{name}">
+<br><br>
+
+Mobile:
+<input type="text" th:field="*{mobile}">
+<br><br>
+
+City:
+<input type="text" th:field="*{city}">
+<br><br>
+
+Room Number:
+<input type="number" th:field="*{roomNumber}">
+<br><br>
+
+Check In:
+<input type="date" th:field="*{checkInDate}">
+<br><br>
+
+Check Out:
+<input type="date" th:field="*{checkOutDate}">
+<br><br>
+
+Amount:
+<input type="number" th:field="*{totalAmount}">
+<br><br>
+
+Payment Status:
+<input type="text" th:field="*{paymentStatus}">
+<br><br>
+
+<button type="submit" class="save-btn">Update</button>
+
+</form>
+
+</body>
+</html>

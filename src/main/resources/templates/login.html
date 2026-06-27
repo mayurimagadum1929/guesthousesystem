@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Guest House Login</title>
+</head>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 350px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+h1{
+    text-align: center;
+    color: #4a4a4a;
+    margin-bottom: 25px;
+}
+
+label{
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #5563d6;
+}
+
+</style>
+
+<body>
+<div class="container">
+
+<h2>Guest House Management System</h2>
+
+<form action="/guest/login" method="post">
+
+<label>User name:</label>
+<input type="text" name="username">
+
+<label>Password:</label>
+<input type="password" name="password">
+
+<button type="submit">Login</button>
+
+</form>
+</div>
+</body>
+</html>
